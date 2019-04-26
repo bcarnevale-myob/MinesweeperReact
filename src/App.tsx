@@ -29,7 +29,7 @@ class App extends Component<any, AppState> {
 
     render() {
         return (
-            <div>
+            <div id="game">
                 <Game {...this.state}/>
             </div>
         );

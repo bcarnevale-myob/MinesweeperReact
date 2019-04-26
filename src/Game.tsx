@@ -38,7 +38,7 @@ export class Game extends Component<GameEventHandlers & GameData, never> {
                 <FieldSize sizeChanged={this.props.sizeHandler}/>
 
                 <Field onClick={this.props.clickHandler} field={this.props.field}/>
-                <p>{this.props.gameOver ? "BOOM! GAME OVER" : ""}</p>
+                <p>{this.props.gameOver ? "💥 BOOM! GAME OVER" : ""}</p>
 
             </div>
         )

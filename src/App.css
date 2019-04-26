@@ -19,14 +19,21 @@
     color: white;
 }
 
+#game {
+    background: lightgrey;
+
+}
+
 #square {
+    background: darkgrey;
     justify-items: center;
     display: flex;
     justify-content: space-around;
 }
 
 #square:hover {
-    border: 1px solid black;
+    background: dimgrey;
+    transform: scale(1.2);
 }
 
 #field {

@@ -15,7 +15,7 @@ export class FieldSize extends Component<FieldSizeFormProps, Size> {
         return <form>
             Field Height: <input name="height" value={this.state.height}
                                  onChange={(e) => this.setState({height: e.target.valueAsNumber})}
-                                 type={"number"}/><br/>
+                                 type={"number"}/>
             Field Width: <input name="width"
                                 value={this.state.width}
                                 onChange={(e) => this.setState({width: e.target.valueAsNumber})}
