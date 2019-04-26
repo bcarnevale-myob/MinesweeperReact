@@ -16,6 +16,7 @@ export class Game extends Component<GameState, any> {
     render() {
         console.log("App props:")
         console.log(this.props);
+
         return (
             <div onClick={this.fieldClickHandler}>
                 {this.props.field}<br/>

@@ -6,19 +6,22 @@ import {Game, GameState, Coordinates} from "./Game";
 
 
 class App extends Component<any, GameState> {
+
     constructor(props: any) {
         super(props);
-        this.state = {field: [], gameOver: true, clickHandler: this.gameClickHandler};
+        this.state = {field: [], gameOver: false, clickHandler: this.gameClickHandler};
         this.gameClickHandler = this.gameClickHandler.bind(this);
     }
 
     render() {
         const state = this.state.field;
+
         return (
             <div>
-                <Game field={state} gameOver={false} clickHandler={this.gameClickHandler}/>
+                <Game field={state} gameOver={this.state.gameOver} clickHandler={this.gameClickHandler}/>
             </div>
         );
+
     }
 
     gameClickHandler(coords: Coordinates) {
