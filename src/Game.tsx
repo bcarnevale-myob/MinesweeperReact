@@ -30,10 +30,15 @@ export class Game extends Component<GameEventHandlers & GameData, never> {
     render() {
         return (
             <div>
+                <div id="header">
+                    <h1>Minesweeper!</h1>
+                    <h3>The game you cannot win.</h3>
+                </div>
+
                 <FieldSize sizeChanged={this.props.sizeHandler}/>
 
                 <Field onClick={this.props.clickHandler} field={this.props.field}/>
-                <p>{this.props.gameOver ? "BOOM! GAME OVER" : "Select your next hit"}</p>
+                <p>{this.props.gameOver ? "BOOM! GAME OVER" : ""}</p>
 
             </div>
         )

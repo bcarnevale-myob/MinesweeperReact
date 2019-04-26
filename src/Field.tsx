@@ -23,7 +23,7 @@ class FieldColumn extends Component<FieldProps & RowProps & ColProps> {
     }
 
     render() {
-        return <span onClick={this.click}>{this.props.value}</span>;
+        return <button id="square" type="button" onClick={this.click}>{this.props.value}</button>;
 
     }
 
@@ -43,7 +43,7 @@ class FieldRow extends Component<FieldProps & RowProps> {
 
 export class Field extends Component<{ onClick: (coord:Coordinates) => void, field: string[] }> {
     render() {
-        return <div>
+        return <div id={'field'}>
             {this.props.field.map((value, row) => <FieldRow row={row} onClick={this.props.onClick} value={value}/>)}
             <br/>
         </div>;

@@ -20,7 +20,7 @@ export class FieldSize extends Component<FieldSizeFormProps, Size> {
                                 value={this.state.width}
                                 onChange={(e) => this.setState({width: e.target.valueAsNumber})}
                                 type={"number"}/><br/>
-            <button type="button" onClick={() => this.props.sizeChanged(this.state)}>Submit</button>
+            <button type="button" onClick={() => this.props.sizeChanged(this.state)}>Let's Play!</button><br/><br/>
         </form>;
     }
 }
